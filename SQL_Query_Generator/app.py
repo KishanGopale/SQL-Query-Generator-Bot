@@ -1,7 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
 
-GOOGLE_API_KEY = "AIzaSyBs2UnMNkx7okr_MvmVcoM1Waz4R4GxZDA"
+GOOGLE_API_KEY = "write yours API here"
 genai.configure(api_key=GOOGLE_API_KEY)
 model = genai.GenerativeModel('gemini-2.0-flash')
 
@@ -73,6 +73,7 @@ def main():
 
                 st.success("Explanation of this SQL Query is:")
                 st.markdown(explanation)
+
 
 
 main()
